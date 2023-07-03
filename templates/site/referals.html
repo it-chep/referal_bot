@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}
+    РЕФЕРАЛЫ
+{% endblock %}
+
+{% block extralinks %}
+    <link rel="stylesheet" href="{% static 'css/referals.css' %}" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+
+    <div>
+        <h4 class="father_name">ИМЯ РЕФЕРАЛА</h4>
+        <h4 class="father_username">USERNAME РЕФЕРАЛА</h4>
+        <h4 class="tg_id">TG_ID</h4>
+        <h4 class="sb_id">SB_ID</h4>
+        <h4 class="count_referals">СКОЛЬКО ПРИШЛО</h4>
+        <h4 class="last_tg_id">TG_ID LAST</h4>
+        <h4 class="last_username">USERNAME LAST</h4>
+        <h4 class="invite_link">ПРИГЛАСИТЕЛЬНАЯ ССЫЛКА</h4>
+    </div>
+
+    {% for item in data %}
+        <div class="user">
+            <p class="father_name">{{ item.father_name }}</p>
+            <p class="father_username">{{ item.father_username }}</p>
+            <p class="tg_id">{{ item.tg_id }}</p>
+            <p class="sb_id">{{ item.sb_id }}</p>
+            <p class="count_referals">{{ item.count_referals }}</p>
+            <p class="last_tg_id">{{ item.last_tg_id }}</p>
+            <p class="last_username">{{ item.last_username }}</p>
+            <p class="invite_link">{{ item.invite_link }}</p>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}

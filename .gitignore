@@ -1,0 +1,10 @@
+/shelf/
+/workspace.xml
+/httpRequests/
+**/__init__.py
+*.env
+*.json
+*.sqlite3
+venv
+.idea/
+__pyache__/

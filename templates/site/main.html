@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}
+    Главная
+{% endblock %}
+
+{% block extralinks %}
+{% endblock %}
+
+
+{% block content %}
+    <a href="{% url 'users' %}"><h1>БАЗА</h1></a>
+    <a href="{% url 'referals' %}"><h1>РЕФЕРАЛЫ</h1></a>
+{% endblock %}

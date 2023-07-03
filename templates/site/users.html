@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_title %}
+    ЮЗЕРЫ
+{% endblock %}
+
+{% block extralinks %}
+    <link href="{% static 'css/users.css' %}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+    <div class="user">
+        <h4 class="tg_id">TG_ID</h4>
+        <h4 class="time">TIME</h4>
+        <h4 class="username">USERNAME</h4>
+        <h4 class="invite_link">ССЫЛКА ПО КОТОРОЙ ПРИШЕЛ</h4>
+    </div>
+
+    {% for item in data %}
+        <div class="user">
+            <p class="tg_id">{{ item.tg_id }}</p>
+            <p class="time"><time>{{ item.time }}</time></p>
+            <p class="username">{{ item.username }}</p>
+            <p class="invite_link">{{ item.invite_link }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,39 @@
+
+.father_name{
+  width: 380px;
+}
+
+.father_username{
+  width: 250px;
+}
+
+.tg_id{
+  width: 105px;
+}
+
+.sb_id{
+  width: 115px;
+}
+
+.count_referals{
+  width: 80px;
+  text-align: center;
+}
+
+p.count_referals{
+  background-color: rgba(0, 86, 25, 0.4);
+}
+
+.last_tg_id{
+  width: 100px;
+}
+
+
+.last_username{
+  width: 150px;
+}
+
+.invite_link{
+  color: #0139ef;
+  width: 300px
+}
